@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicom.jpg" type="image/x-icon">
+    <title>Vanessa Navarro Beauty Salon - Salão de Beleza</title>
+
+    <!-- Fonte bonita do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f5fff9;
+            color: #34443c;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* MENU */
+
+        header {
+            background-color: #b8dfc8;
+            color: #294437;
+            padding: 20px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-family: "Playfair Display", serif;
+            font-size: 30px;
+        }
+
+        nav a {
+            color: #294437;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #6b9f82;
+        }
+
+        /* INÍCIO */
+
+        .inicio {
+            min-height: 520px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+            background-color: #dff3e7;
+        }
+
+        .inicio h2 {
+            font-family: "Playfair Display", serif;
+            font-size: 55px;
+            color: #4f8066;
+            margin-bottom: 15px;
+        }
+
+        .inicio p {
+            font-size: 19px;
+            margin-bottom: 30px;
+        }
+
+        .botao {
+            display: inline-block;
+
+            background-color: #8fc5a6;
+            color: white;
+
+            padding: 14px 28px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+            font-weight: 500;
+
+            transition: 0.3s;
+        }
+
+        .botao:hover {
+            background-color: #6fa989;
+            transform: scale(1.05);
+        }
+
+        /* SEÇÕES */
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-family: "Playfair Display", serif;
+
+            text-align: center;
+
+            color: #4f8066;
+
+            margin-bottom: 40px;
+
+            font-size: 38px;
+        }
+
+        /* CONHEÇA-NOS */
+
+        .conheca {
+            background-color: #ffffff;
+
+            text-align: center;
+        }
+
+        .conheca p {
+            max-width: 800px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+        .destaques {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            margin-top: 40px;
+
+            flex-wrap: wrap;
+        }
+
+        .destaque {
+            width: 220px;
+
+            padding: 25px;
+
+            background-color: #eefaf2;
+
+            border-radius: 15px;
+        }
+
+        .destaque h3 {
+            font-family: "Playfair Display", serif;
+
+            color: #4f8066;
+
+            margin-bottom: 10px;
+        }
+
+        /* SERVIÇOS */
+
+        .servicos {
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: white;
+
+            width: 250px;
+
+            padding: 28px;
+
+            text-align: center;
+
+            border-radius: 18px;
+
+            box-shadow: 0 5px 20px #6fa98920;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-family: "Playfair Display", serif;
+
+            color: #5b9272;
+
+            margin-bottom: 15px;
+
+            font-size: 22px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .preco {
+            font-size: 20px;
+
+            font-weight: 600;
+
+            color: #4f8066;
+        }
+
+        /* SOBRE */
+
+        .sobre {
+            background-color: #dff3e7;
+
+            text-align: center;
+        }
+
+        .sobre p {
+            max-width: 750px;
+
+            margin: auto;
+
+            font-size: 18px;
+
+            line-height: 1.8;
+        }
+
+        /* CONTATO */
+
+        .contato {
+            text-align: center;
+
+            background-color: #ffffff;
+        }
+
+        .contato p {
+            margin: 12px;
+
+            font-size: 18px;
+        }
+
+        .contato a {
+            color: #4f8066;
+            font-weight: 600;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background-color: #8fc5a6;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+        }
+
+        /* CELULAR */
+
+        @media (max-width: 700px) {
+
+            header {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 5px;
+            }
+
+            .inicio h2 {
+                font-size: 40px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <!-- MENU -->
+
+    <header>
+
+        <h1>Vanessa Navarro Beauty Salon</h1>
+
+        <nav>
+
+            <a href="#inicio">Início</a>
+
+            <a href="#conheca">Conheça-nos</a>
+
+            <a href="#servicos">Serviços</a>
+
+            <a href="#contato">Contato</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- INÍCIO -->
+
+    <section class="inicio" id="inicio">
+
+        <div>
+
+            <h2>Realce sua beleza!</h2>
+
+            <p>
+                Um espaço criado para você se sentir ainda mais especial.
+            </p>
+
+            <a class="botao" href="#contato">
+                Agendar horário
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONHEÇA-NOS -->
+
+    <section class="conheca" id="conheca">
+
+        <h2>Conheça-nos</h2>
+
+        <p>
+           É um privilégio receber você no Vanessa Navarro Beauty Salon.Consolidamos nossa trajetória com base na confiança, dedicação e alta qualidade. Nosso objetivo é oferecer um atendimento de alto padrão, onde o cuidado com a sua imagem é tratado com o máximo profissionalismo. Dispomos das melhores tecnologias e marcas do mercado para cuidar da integridade e da beleza dos seus fios
+        </p>
+
+
+        <div class="destaques">
+
+            <div class="destaque">
+
+                <h3>✨ Qualidade</h3>
+
+                <p>
+                    Trabalhamos com produtos e serviços de qualidade.
+                </p>
+
+            </div>
+
+
+            <div class="destaque">
+
+                <h3>💚 Carinho</h3>
+
+                <p>
+                    Atendimento pensado especialmente para você.
+                </p>
+
+            </div>
+
+
+            <div class="destaque">
+
+                <h3>🌿 Bem-estar</h3>
+
+                <p>
+                    Um ambiente tranquilo e agradável.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- SERVIÇOS -->
+
+<section id="servicos">
+
+    <h2>Nossos Serviços</h2>
+
+    <div class="servicos">
+
+        <div class="card">
+            <h3>💇 Corte</h3>
+            <p>Corte personalizado para seu estilo.</p>
+            <div class="preco">
+                R$ 50,00
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>💅 Manicure</h3>
+            <p>Cuidados e esmaltação das unhas.</p>
+            <div class="preco">
+                R$ 35,00
+            </div>
+        </div>
+
+ <div class="card">
+            <h3>Baby Liss</h3>
+            <p>Belos cachos.</p>
+            <div class="preco">
+                R$ 250,00
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>💄 Make</h3>
+            <p>Maquiagem para deixar seu visual ainda mais bonito.</p>
+            <div class="preco">
+                R$ 500,00
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>✨ Luzes</h3>
+            <p>Realce seus cabelos com lindas luzes.</p>
+            <div class="preco">
+                R$ 500,00
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>💆 Escova</h3>
+            <p>Escova e finalização dos cabelos.</p>
+            <div class="preco">
+                R$ 40,00
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>✨ Hidratação</h3>
+            <p>Tratamento para cuidar dos seus cabelos.</p>
+            <div class="preco">
+                R$ 60,00
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- SOBRE -->
+
+    <section class="sobre">
+
+        <h2>Sobre o Vanessa Navarro Beauty Salon</h2>
+
+        <p>
+          Desde 2020, o Salão Vanessa Navarro concretiza uma promessa divina de cuidado e autoestima. Dedicamos nossa estrutura para que o seu cabelo tenha o tratamento especial que merece, combinando técnicas modernas aos melhores produtos do mercado. Venha realçar a sua beleza natural com quem entende do assunto.
+        </p>
+
+    </section>
+
+
+    <!-- CONTATO -->
+
+    <section class="contato" id="contato">
+
+        <h2>Entre em Contato</h2>
+
+        <p>Estamos localizados em: <address>Avenida República do Brasil N°2003</address></p>
+
+        <p>📞 (94) 99182-7174</p>
+
+     
+
+        <p>
+            📷
+            <a href="https://www.instagram.com/" target="_blank">
+              @vanessanavarro_oficial
+            </a>
+        </p>
+
+        <br>
+
+        <a class="botao"
+           href="https://wa.me/5594991827174"
+           target="_blank">
+
+            Agendar pelo WhatsApp
+
+        </a>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            © Designed By: Emanuel Navarro LTDA® 
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
